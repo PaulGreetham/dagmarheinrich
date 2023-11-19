@@ -1,9 +1,9 @@
 .navbar {
   display: inline-flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 
-  position: fixed;  // This makes the navbar stay in place
+  position: sticky;  // This makes the navbar stay in place
   height: 8vh;
   top: 0;           // Aligns the navbar to the top of the viewport
   left: 0;          // Aligns the navbar to the left of the viewport
@@ -15,14 +15,15 @@
 
 button {
   font-family: 'Roboto', sans-serif;  // This sets the font
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin: 0 0.6rem 0 0.6rem;
   border: none;
   background-color: transparent;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 
   &:hover {
-    scale: 1.05;
+    scale: 1.03;
     transition: 0.2s ease-in-out;
   }
 }
