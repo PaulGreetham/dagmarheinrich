@@ -2,7 +2,41 @@
   display: block;
   height: 92vh;
 }
+
 .home-section {
-  background-color: lightskyblue;
+  background-image: url('/assets/images/home.jpg');
+  background-size: cover;
   height: 100%;
+}
+
+.title-section {
+  height: 50%;
+  width: 70%;
+  bottom: 0;
+  position: absolute;
+
+  margin-left: 5rem;
+
+  h1 {
+    font-size: 5rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    color: white;
+    text-shadow: 8px 8px 48px rgba(0, 0, 0, 2);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 8px 8px 48px rgba(0, 0, 0, 2);
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 0;
+    color: white;
+    text-shadow: 8px 8px 48px rgba(0, 0, 0, 1);
+  }
 }
