@@ -1,0 +1,28 @@
+.navbar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  position: fixed;  // This makes the navbar stay in place
+  height: 8vh;
+  top: 0;           // Aligns the navbar to the top of the viewport
+  left: 0;          // Aligns the navbar to the left of the viewport
+  width: 100%;      // Ensures the navbar extends across the full width
+  z-index: 1000;    // Ensures the navbar stays above other content
+
+  background-color: white;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;  // This sets the font
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    scale: 1.05;
+    transition: 0.2s ease-in-out;
+  }
+}
