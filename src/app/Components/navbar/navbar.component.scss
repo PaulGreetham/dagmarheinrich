@@ -18,16 +18,16 @@
 }
 
 button {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.2rem;
-  margin-left: 0.6rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  margin-left: 1.2rem;
   border: none;
   background-color: transparent;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 
   &:hover {
-    scale: 1.03;
+    scale: 1.02;
     transition: 0.2s ease-in-out;
   }
 }
