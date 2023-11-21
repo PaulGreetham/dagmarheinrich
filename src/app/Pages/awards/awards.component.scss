@@ -1,0 +1,58 @@
+:host {
+  display: block;
+  height: 92vh;
+}
+
+.awards-section {
+  display: flex;
+  height: 100%;
+}
+
+.awards-article {
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Merriweather', serif;
+
+  margin-block: 6rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.awards-header h1 {
+  font-size: 1.5rem; /* Large size for the main title */
+}
+
+.awards-header h2 {
+  font-size: 1rem; /* Smaller size for the sub-title */
+}
+
+.awards-body {
+  margin-top: 1rem;
+  overflow: auto;
+}
+
+.awards-text {
+  font-size: 0.8rem
+}
+
+.awards-info {
+  font-size: 0.85rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.awards-info span {
+  display: block; /* Each info on its own line */
+  margin-bottom: 0.3rem;
+}
+
+.awards-photo {
+  margin-top: 1rem;
+}
+
+.awards-photo img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc; /* Optional border for the image */
+}
