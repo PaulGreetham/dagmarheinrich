@@ -1,8 +1,8 @@
 <nav class="navbar">
-  <button (click)="scrollTo('home')">Home</button>
-  <button (click)="scrollTo('awards')">Awards</button>
-  <button (click)="scrollTo('experience')">Experience</button>
-  <button (click)="scrollTo('education')">Education</button>
-  <button (click)="scrollTo('publications')">Publications</button>
-  <button (click)="scrollTo('contact')">Contact</button>
+  <button [class.active]="activeSection === 'home'" class="nav-home" (click)="scrollTo('home')"><span>Home</span></button>
+  <button [class.active]="activeSection === 'awards'" class="nav-awards" (click)="scrollTo('awards')"><span>Awards</span></button>
+  <button [class.active]="activeSection === 'experience'" class="nav-experience" (click)="scrollTo('experience')"><span>Experience</span></button>
+  <button [class.active]="activeSection === 'education'" class="nav-education" (click)="scrollTo('education')"><span>Education</span></button>
+  <button [class.active]="activeSection === 'publications'" class="nav-publications" (click)="scrollTo('publications')"><span>Publications</span></button>
+  <button [class.active]="activeSection === 'contact'" class="nav-contact" (click)="scrollTo('contact')"><span>Contact</span></button>
 </nav>

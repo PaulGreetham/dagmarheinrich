@@ -6,13 +6,15 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  activeSection: string = '';
+
   scrollTo(section: string): void {
+    this.activeSection = section;
     const sectionElement = document.getElementById(section);
     if (sectionElement) {
-      // Calculate the position to scroll to
       const offsetTop = sectionElement.offsetTop - (window.innerHeight * 0.08);
       window.scrollTo({ top: offsetTop, behavior: 'smooth' });
     }
