@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,6 +10,24 @@ import { CommonModule } from '@angular/common';
 })
 export class NavbarComponent {
   activeSection: string = 'home';
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(): void {
+    const sections = ['home', 'awards', 'experience', 'education', 'publications', 'contact'];
+    const currentScrollPosition = window.pageYOffset + (window.innerHeight * 0.081);
+
+    sections.forEach(section => {
+      const sectionElement = document.getElementById(section);
+      if (sectionElement) {
+        const sectionTop = sectionElement.offsetTop;
+        const sectionHeight = sectionElement.offsetHeight;
+
+        if (currentScrollPosition >= sectionTop && currentScrollPosition < sectionTop + sectionHeight) {
+          this.activeSection = section;
+        }
+      }
+    });
+  }
 
   scrollTo(section: string): void {
     this.activeSection = section;
