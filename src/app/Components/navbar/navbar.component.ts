@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  activeSection: string = 'home';
+  activeSection: string = '/';
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(): void {
@@ -33,7 +34,7 @@ export class NavbarComponent {
     this.activeSection = section;
     const sectionElement = document.getElementById(section);
     if (sectionElement) {
-      const offsetTop = sectionElement.offsetTop - (window.innerHeight * 0.08);
+      const offsetTop = sectionElement.offsetTop - (window.innerHeight * 0.079);
       window.scrollTo({ top: offsetTop, behavior: 'smooth' });
     }
   }
