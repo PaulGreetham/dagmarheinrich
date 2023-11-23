@@ -38,7 +38,7 @@
       bottom: -10px; // Adjust as needed for spacing
       left: 0;
       right: 100%; // Start with the underline off to the right
-      height: 12px; // Thickness of the underline
+      height: 16px; // Thickness of the underline
       background-color: #007bff;  // Color of the underline
       animation: slideUnderline 2s ease-in forwards; // Animation for the underline
       animation-delay: 3s;
@@ -54,7 +54,6 @@
         left: 0;
       }
     }
-
   }
 
   h2 {
