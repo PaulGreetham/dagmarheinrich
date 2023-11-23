@@ -38,7 +38,6 @@ button {
     left: 0;
     right: 100%;
     height: 12px;
-    background-color: #007bff; // Example color
     transition: right 0.5s ease-out, left 0.5s ease-in-out;
   }
 
@@ -73,10 +72,9 @@ button {
   }
 }
 
-.nav-home:not(.active)::before {
-  right: 100%;
+button.nav-home:hover::before, button.nav-home.active::before {
+  right: 0;
   left: 0;
-  transition: right 0.5s ease-out, left 0.5s ease-in-out;
 }
 
 @keyframes initialSlideIn {
