@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  activeSection: string = '';
+  activeSection: string = 'home';
 
   scrollTo(section: string): void {
     this.activeSection = section;

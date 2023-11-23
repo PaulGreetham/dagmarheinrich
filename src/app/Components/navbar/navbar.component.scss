@@ -42,13 +42,14 @@ button {
     transition: right 0.5s ease-out, left 0.5s ease-in-out;
   }
 
-  &:hover::before {
+  &:hover::before, &.active::before {
     right: 0;
     left: 0;
   }
 
   &.nav-home::before {
     background-color: #007bff;
+    animation: initialSlideIn 0.5s ease-in;
   }
 
   &.nav-awards::before {
@@ -72,7 +73,19 @@ button {
   }
 }
 
-button.active::before {
-  right: 0;
+.nav-home:not(.active)::before {
+  right: 100%;
   left: 0;
+  transition: right 0.5s ease-out, left 0.5s ease-in-out;
+}
+
+@keyframes initialSlideIn {
+  from {
+    right: 100%;
+    left: 0;
+  }
+  to {
+    right: 0;
+    left: 0;
+  }
 }

@@ -40,7 +40,7 @@
       right: 100%; // Start with the underline off to the right
       height: 12px; // Thickness of the underline
       background-color: #007bff;  // Color of the underline
-      animation: slideUnderline 2s ease-in-out forwards; // Animation for the underline
+      animation: slideUnderline 2s ease-in forwards; // Animation for the underline
       animation-delay: 3s;
     }
 
