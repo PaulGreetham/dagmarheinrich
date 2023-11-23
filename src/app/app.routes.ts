@@ -14,8 +14,8 @@ export const routes: Routes = [
   { path: 'education', component: EducationComponent },
   { path: 'publications', component: PublicationsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', redirectTo: '/home' }
+  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({
