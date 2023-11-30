@@ -1,1 +1,22 @@
-<p>accordion works!</p>
+<div class="accordion-container">
+  <div class="accordion-buttons">
+    <button
+      *ngFor="let item of accordionItems"
+      (click)="toggleSection(item.id.toString())"
+      [class.open]="openSection === item.id.toString()"
+      [class.closed]="openSection !== item.id.toString()"
+    >
+      <div class="button-content">
+        <div class="employer">{{ item.employer }}</div>
+        <div class="title">{{ item.title }}</div>
+        <div class="date">{{ item.date }}</div>
+      </div>
+    </button>
+  </div>
+
+  <div class="accordion-content">
+    <div *ngFor="let item of accordionItems" [hidden]="openSection !== item.id.toString()" class="content">
+      <div [innerHTML]="item.content"></div>
+    </div>
+  </div>
+</div>

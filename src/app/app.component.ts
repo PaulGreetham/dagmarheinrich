@@ -8,13 +8,14 @@ import { ExperienceComponent } from "./Pages/experience/experience.component";
 import { EducationComponent } from "./Pages/education/education.component";
 import { PublicationsComponent } from "./Pages/publications/publications.component";
 import { ContactComponent } from "./Pages/contact/contact.component";
+import { AccordionComponent } from "./Components/accordion/accordion.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    imports: [CommonModule, RouterOutlet, NavbarComponent, HomeComponent, AwardsComponent, ExperienceComponent, EducationComponent, PublicationsComponent, ContactComponent]
+    imports: [CommonModule, RouterOutlet, NavbarComponent, AccordionComponent, HomeComponent, AwardsComponent, ExperienceComponent, EducationComponent, PublicationsComponent, ContactComponent]
 })
 export class AppComponent {
   title = 'dagmarheinrich';
