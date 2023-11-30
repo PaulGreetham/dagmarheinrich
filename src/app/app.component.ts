@@ -9,13 +9,15 @@ import { EducationComponent } from "./Pages/education/education.component";
 import { PublicationsComponent } from "./Pages/publications/publications.component";
 import { ContactComponent } from "./Pages/contact/contact.component";
 import { AccordionComponent } from "./Components/accordion/accordion.component";
+import { Publication } from "./Models/publication.model";
+import { PublicationsCardComponent } from "./Components/publications-card/publications-card.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    imports: [CommonModule, RouterOutlet, NavbarComponent, AccordionComponent, HomeComponent, AwardsComponent, ExperienceComponent, EducationComponent, PublicationsComponent, ContactComponent]
+    imports: [CommonModule, RouterOutlet, NavbarComponent, PublicationsCardComponent, AccordionComponent, HomeComponent, AwardsComponent, ExperienceComponent, EducationComponent, PublicationsComponent, ContactComponent]
 })
 export class AppComponent {
   title = 'dagmarheinrich';

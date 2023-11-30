@@ -1,3 +1,3 @@
-<section class="publications-section">
-  <p>publications works!</p>
-</section>
+<div class="publications-container">
+  <app-publications-card *ngFor="let publication of publications" [publication]="publication"></app-publications-card>
+</div>

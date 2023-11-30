@@ -1,0 +1,22 @@
+.publication-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 16rem; // Fixed height
+  width: 14rem; // Fixed width
+  margin: 0.5rem;
+  padding: 1.5rem;
+  overflow: auto; // Shows scrollbar only if needed
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+  }
+}
