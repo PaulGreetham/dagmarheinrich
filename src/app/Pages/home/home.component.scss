@@ -40,7 +40,7 @@
       right: 100%; // Start with the underline off to the right
       height: 16px; // Thickness of the underline
       background-color: #007bff;  // Color of the underline
-      animation: slideUnderline 2s ease-in forwards; // Animation for the underline
+      animation: slideUnderline 1s ease-in forwards; // Animation for the underline
       animation-delay: 3s;
     }
 
@@ -92,7 +92,7 @@
 
 .title-section-content {
   opacity: 0;
-  animation: fadeIn 1.5s ease-out 1s forwards;
+  animation: fadeIn 1s ease-out 1s forwards;
 
   @keyframes fadeIn {
     from {
@@ -107,7 +107,7 @@
 
 .photon-container img {
   opacity: 0;
-  animation: fadeIn 1.5s ease-out 2s forwards;
+  animation: fadeIn 1s ease-out 2s forwards;
 
   @keyframes fadeIn {
     from {
