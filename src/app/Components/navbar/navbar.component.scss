@@ -34,33 +34,35 @@ button {
   &::before {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -6px;
     left: 0;
     right: 100%;
-    height: 12px;
-    transition: right 0.5s ease-out, left 0.5s ease-in-out;
+    height: 6px;
+    transition: right 0.3s ease-out 0.4s, left 0.1s ease-in-out 0.1s;
   }
 
   &:hover::before, &.active::before {
+    background-color: lightseagreen;
+    bottom: -6px;
     right: 0;
     left: 0;
   }
 
   &.nav-home::before {
-    background-color: #007bff;
+    background-color: lightseagreen;
     animation: initialSlideIn 0.5s ease-in;
   }
 
   &.nav-awards::before {
-    background-color: yellow;
+    background-color: lightseagreen;
   }
 
   &.nav-experience::before {
-    background-color: lightgreen;
+    background-color: lightseagreen;
   }
 
   &.nav-education::before {
-    background-color: lightsalmon;
+    background-color: lightseagreen;
   }
 
   &.nav-publications::before {
@@ -68,7 +70,7 @@ button {
   }
 
   &.nav-contact::before {
-    background-color: lightcoral;
+    background-color: lightseagreen;
   }
 }
 
