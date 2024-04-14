@@ -38,10 +38,10 @@
       bottom: -10px; // Adjust as needed for spacing
       left: 0;
       right: 100%; // Start with the underline off to the right
-      height: 16px; // Thickness of the underline
-      background-color: #007bff;  // Color of the underline
+      height: 8px; // Thickness of the underline
+      background-color: lightseagreen;  // Color of the underline
       animation: slideUnderline 1s ease-in forwards; // Animation for the underline
-      animation-delay: 3s;
+      animation-delay: 1.5s;
     }
 
     @keyframes slideUnderline {
@@ -107,7 +107,7 @@
 
 .photon-container img {
   opacity: 0;
-  animation: fadeIn 1s ease-out 2s forwards;
+  animation: fadeIn 1s ease-out 2.5s forwards;
 
   @keyframes fadeIn {
     from {
