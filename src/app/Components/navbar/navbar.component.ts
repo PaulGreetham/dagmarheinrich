@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  activeSection: string = '/';
+  activeSection: string = 'home';
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(): void {
