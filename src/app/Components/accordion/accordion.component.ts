@@ -16,7 +16,14 @@ export class AccordionComponent {
     date: string,
     content: string
   }[] = [];
+
   openSection: string | null = null;
+
+  ngOnInit() {
+    if (this.accordionItems.length > 0) {
+      this.openSection = this.accordionItems[0].id.toString();
+    }
+  }
 
   toggleSection(sectionId: string) {
     this.openSection = (this.openSection === sectionId) ? null : sectionId;
