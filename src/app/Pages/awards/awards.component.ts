@@ -17,6 +17,6 @@ export class AwardsComponent {
   onWindowScroll() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-    this.scrollPercent = (scrollTop / scrollHeight) * 500 - 100;
+    this.scrollPercent = (scrollTop / scrollHeight) * 500 - 95;
   }
 }
