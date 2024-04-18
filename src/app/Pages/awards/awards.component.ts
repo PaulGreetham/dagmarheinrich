@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,8 +6,17 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './awards.component.html',
-  styleUrl: './awards.component.scss'
+  styleUrls: ['./awards.component.scss']
 })
 export class AwardsComponent {
+  scrollPercent = 0;
 
+  constructor() {}
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    this.scrollPercent = (scrollTop / scrollHeight) * 500 - 100;
+  }
 }
